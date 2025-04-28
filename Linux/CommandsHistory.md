@@ -1,3 +1,5 @@
+# Григорьева Вероника Григорьевна, 25.04.2025, группа группа 6257
+
 veronik@UbuntuM3:~$ mysql -v
 Command 'mysql' not found, but can be installed with:
 sudo apt install mysql-client-core    # version 8.4.4-0ubuntu2, or
