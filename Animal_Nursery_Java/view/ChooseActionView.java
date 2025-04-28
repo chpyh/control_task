@@ -25,14 +25,18 @@ public class ChooseActionView {
     public void run(){
         boolean isEnougth = false;
         AnimalController controller = new AnimalController();
-        printOption();
         
         while(!isEnougth){
+            printOption();
             int choice = controller.getOption();
-            if (choice == 0){
+
+            if (choice > 5 && choice < 0){   
+                System.out.println("Error: enter numbers from 0 ;");
+                
+            }else if (choice == 0){
                 isEnougth = true;
                 scanner.close();
-            }else{   
+            }else{
                 switch (choice){
                     case 1:
                         System.out.println("Input type, animal, name, date of birth and commands:");
