@@ -1,13 +1,10 @@
-import controller.AnimalController;
-import view.choose_action;
+
+import view.ChooseActionView;
 
 public class Main {
     public static void main(String[] args){
-        /* choose_action action = new choose_action();
-        AnimalController controller = new AnimalController();
-        controller.run();*/
-
-
+        ChooseActionView action = new ChooseActionView();
+        action.run();
 
     }
     
