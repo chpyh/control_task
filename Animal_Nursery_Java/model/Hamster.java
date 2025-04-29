@@ -6,8 +6,8 @@ import java.util.List;
 public class Hamster extends Pet {
     private String creature;
 
-    public Hamster(String type, int Id, String creature, String name, LocalDate birthDate, List<String> commands) {
-        super(type, name, Id, birthDate, commands);
+    public Hamster(String type, String creature, String name, LocalDate birthDate, List<String> commands) {
+        super(type, name, birthDate, commands);
         this.creature = creature;
     }
     

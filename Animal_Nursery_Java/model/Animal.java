@@ -8,15 +8,13 @@ import java.util.List;
 
 public class Animal {
 
-    private int Id;
     protected String name;
     protected LocalDate birthDate;
     protected List<String> commands = new ArrayList<>();
 
-    public Animal(int Id, String name, LocalDate birthDate, List<String> commands) {
+    public Animal(String name, LocalDate birthDate, List<String> commands) {
         this.name = name;
         this.birthDate = birthDate;
-        this.Id = Id;
         this.commands = commands;
     }
 
@@ -32,13 +30,6 @@ public class Animal {
         this.name = name;
     }
 
-    public int getId() {
-        return Id;
-    }
-
-    public void setId(int Id) {
-        this.Id = Id;
-    }
 
     public String getBirthDate() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");

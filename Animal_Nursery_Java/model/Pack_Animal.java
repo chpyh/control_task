@@ -7,8 +7,8 @@ public class Pack_Animal extends Animal {
 
     protected String type;
 
-    public Pack_Animal(String type, String name, int Id, LocalDate birthDate, List<String> commands){
-        super(Id, name, birthDate, commands);
+    public Pack_Animal(String type, String name, LocalDate birthDate, List<String> commands){
+        super(name, birthDate, commands);
         this.type = type;
      
     }

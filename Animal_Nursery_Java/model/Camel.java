@@ -6,8 +6,8 @@ import java.util.List;
 public class Camel extends Pack_Animal {
     private String creature;
 
-    public Camel(String type, int Id, String creature, String name, LocalDate birthDate, List<String> commands) {
-        super(type, name, Id, birthDate, commands);
+    public Camel(String type, String creature, String name, LocalDate birthDate, List<String> commands) {
+        super(type, name, birthDate, commands);
         this.creature = creature;
     }
 

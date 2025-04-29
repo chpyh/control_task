@@ -8,8 +8,8 @@ public class Pet extends Animal{
     protected String type;
 
 
-    public Pet(String type, String name, int Id, LocalDate birthDate, List<String> commands){
-        super(Id, name, birthDate, commands);
+    public Pet(String type, String name, LocalDate birthDate, List<String> commands){
+        super(name, birthDate, commands);
         this.type = type;
      
     }
