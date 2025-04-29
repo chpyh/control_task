@@ -3,11 +3,11 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NurseryList {
+public class  NurseryList<T>{
 
-    private List<Animal> animalList = new ArrayList<>();
+    private List<T> animalList = new ArrayList<>();
 
-    public NurseryList(List<Animal> animalList) {
+    public NurseryList(List<T> animalList) {
 
         this.animalList = animalList;
     }
@@ -16,19 +16,23 @@ public class NurseryList {
 
     }
 
-    public void setAnimalList(Animal animal) {
+    public void setAnimalList(T animal) {
         animalList.add(animal);
 
     }
 
-    public List<Animal> getAnimalList() {
+    public List<T> getAnimalList() {
         return animalList;
     }
 
 
+    public int getAnimalListLength(){
+        return animalList.size();
+    }
+
     @Override
     public String toString() {
-        return "Animals: of nursery" + animalList;
+        return "" + animalList;
 
     }
 

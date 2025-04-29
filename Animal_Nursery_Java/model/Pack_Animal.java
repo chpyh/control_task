@@ -1,11 +1,16 @@
 package model;
 
+import java.time.LocalDate;
+import java.util.List;
+
 public class Pack_Animal extends Animal {
 
     protected String type;
 
-    public Pack_Animal(String type){
+    public Pack_Animal(String type, String name, int Id, LocalDate birthDate, List<String> commands){
+        super(Id, name, birthDate, commands);
         this.type = type;
+     
     }
 
     public Pack_Animal( ){

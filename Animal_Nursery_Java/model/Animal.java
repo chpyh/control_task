@@ -13,7 +13,7 @@ public class Animal {
     protected LocalDate birthDate;
     protected List<String> commands = new ArrayList<>();
 
-    public Animal(int Id, String name, String type, LocalDate birthDate, List<String> commands) {
+    public Animal(int Id, String name, LocalDate birthDate, List<String> commands) {
         this.name = name;
         this.birthDate = birthDate;
         this.Id = Id;
